@@ -10,8 +10,8 @@ const ContextProvider = props => {
   }
   const [state, setState] = React.useState({
     name: 'Doug',
-    cool: true,
     age: 100,
+    cool: true,
     dispatch: action => setState(state => reducer(state, action)),
   })
 
